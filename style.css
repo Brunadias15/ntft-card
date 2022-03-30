@@ -1,22 +1,117 @@
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Outfit", sans-serif;
-}
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  background-color: hsl(217, 54%, 11%);
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
+@media screen and (min-width: 375px) {
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  body {
+    background-color: hsl(217, 54%, 11%);
+  }
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    background-color: hsl(217, 54%, 11%);
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
 
-.main {
-  width: 100%;
-  height: 100vh;
-  background-color: hsl(217, 54%, 11%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  img {
+    max-width: 100%;
+  }
+  .main {
+    color: hsl(0, 0%, 100%);
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main .card {
+    width: 100%;
+    max-width: 300px;
+    padding: 24px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 12px;
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    line-height: 28px;
+  }
+
+  .main .card .img {
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+
+  .main .card .nome-nft {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .descricao {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    color: hsl(215, 51%, 70%);
+  }
+
+  .main .card .infos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .main .card .infos .price {
+    display: flex;
+    align-items: center;
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+  }
+
+  img {
+    margin-right: 10px;
+  }
+
+  .data {
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+    font-weight: 600;
+  }
+
+  .main .card .infos .price .data img {
+    margin-right: 10px;
+  }
+
+  .main .card hr.bar {
+    border: 1px solid hsl(215, 32%, 27%);
+    margin-bottom: 20px;
+  }
+
+  .main .card .creator {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .main .card .creator .foto {
+    margin-right: 16px;
+  }
+
+  .main .card .creator .foto img {
+    width: 100%;
+    max-width: 32px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+  }
+
+  .main .card .creator .nome {
+    color: hsl(215, 51%, 70%);
+  }
+
+  .main .card .creator .nome span {
+    color: hsl(0, 0%, 100%);
+  }
 }
